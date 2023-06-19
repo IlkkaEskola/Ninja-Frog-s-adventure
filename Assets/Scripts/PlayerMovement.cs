@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb2D;
     public Animator animator;
 
+    [SerializeField] private AudioSource jumpSoundEffect;
+
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -53,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb2D.velocity = new Vector2(0, jumpForce);
             animator.SetTrigger("Jump");
+            jumpSoundEffect.Play();
         }
 
         if(rb2D.velocity.y < 0)
