@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
 
     [SerializeField] private AudioSource jumpSoundEffect;
+    [SerializeField] private AudioSource deathSoundEffect;
 
     void Start()
     {
@@ -77,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
         rb2D.bodyType = RigidbodyType2D.Static;
         animator.SetTrigger("Die");
         moveSpeed = 0;
+        deathSoundEffect.Play();
 
     }
 
