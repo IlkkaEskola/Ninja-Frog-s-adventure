@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
-    private int cherries = 0;
+    //private int cherries = 0;
 
     [SerializeField] private Text cherriesText;
 
@@ -16,8 +16,9 @@ public class ItemCollector : MonoBehaviour
         if (collision.gameObject.CompareTag("Cherry"))
         {
             Destroy(collision.gameObject);
-            cherries++;
-            cherriesText.text = "Cherries: " + cherries;
+            Scoring.totalScore ++;
+            cherriesText.text = "Cherries: " + Scoring.totalScore;
+            Debug.Log(Scoring.totalScore);
             itemCollectSoundEffect.Play();
         }
     }
