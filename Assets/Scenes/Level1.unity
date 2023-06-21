@@ -52790,6 +52790,86 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2edc5be3d158c2445b1034adea83dc4e, type: 3}
+--- !u!1 &1142462499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1142462500}
+  - component: {fileID: 1142462502}
+  - component: {fileID: 1142462501}
+  m_Layer: 5
+  m_Name: Lives Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1142462500
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142462499}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6874621006982034069}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 95, y: -47}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1142462501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142462499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.08517267, g: 0.5471698, b: 0.13896279, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8f0c3a7bbfc78d242848ea140665fb02, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Lives: 3'
+--- !u!222 &1142462502
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142462499}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1148827688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62915,7 +62995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4838132037367888315, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.8
+      value: 141.88
       objectReference: {fileID: 0}
     - target: {fileID: 4838132037367888315, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -62953,6 +63033,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4838132037367888316, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
+      propertyPath: livesText
+      value: 
+      objectReference: {fileID: 1142462501}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
 --- !u!1001 &5059364076794399208
@@ -63168,8 +63252,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6874621006395780940, guid: 9d0dd7a90d3344a4abe66ab0628f8672, type: 3}
+      propertyPath: m_Text
+      value: 'Cherries: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6874621006395780940, guid: 9d0dd7a90d3344a4abe66ab0628f8672, type: 3}
+      propertyPath: m_Color.b
+      value: 0.055802785
+      objectReference: {fileID: 0}
+    - target: {fileID: 6874621006395780940, guid: 9d0dd7a90d3344a4abe66ab0628f8672, type: 3}
+      propertyPath: m_Color.g
+      value: 0.055802785
+      objectReference: {fileID: 0}
+    - target: {fileID: 6874621006395780940, guid: 9d0dd7a90d3344a4abe66ab0628f8672, type: 3}
+      propertyPath: m_Color.r
+      value: 0.3584906
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d0dd7a90d3344a4abe66ab0628f8672, type: 3}
+--- !u!224 &6874621006982034069 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6874621005340043942, guid: 9d0dd7a90d3344a4abe66ab0628f8672, type: 3}
+  m_PrefabInstance: {fileID: 6874621006982034068}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7742449008509230417
 PrefabInstance:
   m_ObjectHideFlags: 0

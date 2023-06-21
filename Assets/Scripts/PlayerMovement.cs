@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
+    //private int totalLives = 3;
+
     public float moveSpeed;
     public float jumpForce;
     private float horizontalMovement;
@@ -20,10 +23,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioSource jumpSoundEffect;
     [SerializeField] private AudioSource deathSoundEffect;
 
+    //[SerializeField] private Text livesText;
+
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        //livesText.text = "Lives: " + totalLives;
     }
 
 
@@ -79,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetTrigger("Die");
         moveSpeed = 0;
         deathSoundEffect.Play();
+        
 
     }
 

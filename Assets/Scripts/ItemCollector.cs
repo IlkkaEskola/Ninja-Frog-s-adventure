@@ -11,6 +11,11 @@ public class ItemCollector : MonoBehaviour
 
     [SerializeField] private AudioSource itemCollectSoundEffect;
 
+    private void Start()
+    {
+        cherriesText.text = "Cherries: " + Scoring.totalScore;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Cherry"))
@@ -18,7 +23,6 @@ public class ItemCollector : MonoBehaviour
             Destroy(collision.gameObject);
             Scoring.totalScore ++;
             cherriesText.text = "Cherries: " + Scoring.totalScore;
-            Debug.Log(Scoring.totalScore);
             itemCollectSoundEffect.Play();
         }
     }
