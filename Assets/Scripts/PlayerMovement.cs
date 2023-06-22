@@ -70,6 +70,12 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("Fall", true);
         }
+
+        //if (gameObject.transform.position.y < -10)
+        //{
+            //Die();
+            
+        //}
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
