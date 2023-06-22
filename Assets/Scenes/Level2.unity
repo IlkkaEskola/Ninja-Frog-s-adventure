@@ -2446,6 +2446,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4838132037367888257, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
+      propertyPath: livesText
+      value: 
+      objectReference: {fileID: 666284949}
+    - target: {fileID: 4838132037367888257, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
       propertyPath: cherriesText
       value: 
       objectReference: {fileID: 666284949}
@@ -2497,6 +2501,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4838132037367888316, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
+      propertyPath: livesText
+      value: 
+      objectReference: {fileID: 666284949}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
 --- !u!1001 &2075486543

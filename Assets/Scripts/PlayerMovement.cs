@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -23,12 +25,22 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioSource jumpSoundEffect;
     [SerializeField] private AudioSource deathSoundEffect;
 
+    [SerializeField] private Text livesText;
+
+    [SerializeField] private AudioSource itemCollectSoundEffect;
+
+
+
     //[SerializeField] private Text livesText;
+
+    
 
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        livesText.text = "Lives: " + Scoring.totalLives;
+
 
         //livesText.text = "Lives: " + totalLives;
     }
@@ -83,6 +95,18 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Trap"))
         {
             Die();
+            Scoring.totalLives--;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Cherry"))
+        {
+            Destroy(collision.gameObject);
+            Scoring.totalLives++;
+            livesText.text = "Lives: " + Scoring.totalLives;
+            itemCollectSoundEffect.Play();
         }
     }
 
@@ -92,7 +116,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetTrigger("Die");
         moveSpeed = 0;
         deathSoundEffect.Play();
-        
+
 
     }
 
@@ -102,3 +126,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
 }
+
+
+
+
+
+
+
+

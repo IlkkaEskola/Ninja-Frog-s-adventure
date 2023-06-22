@@ -52790,17 +52790,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2edc5be3d158c2445b1034adea83dc4e, type: 3}
---- !u!114 &1142462501 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6698078467705899012, guid: 9d0dd7a90d3344a4abe66ab0628f8672, type: 3}
-  m_PrefabInstance: {fileID: 6874621006982034068}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1148827688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62912,10 +62901,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4838132037367888257, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
-      propertyPath: cherriesText
-      value: 
-      objectReference: {fileID: 624074200}
     - target: {fileID: 4838132037367888313, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -62967,7 +62952,7 @@ PrefabInstance:
     - target: {fileID: 4838132037367888316, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
       propertyPath: livesText
       value: 
-      objectReference: {fileID: 1142462501}
+      objectReference: {fileID: 624074200}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
 --- !u!1001 &5059364076794399208
