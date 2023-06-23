@@ -125,6 +125,11 @@ public class PlayerMovement : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    //private void GameOver()
+    //{
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    //}
+
 }
 
 
