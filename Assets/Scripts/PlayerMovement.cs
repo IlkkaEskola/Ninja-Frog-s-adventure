@@ -96,6 +96,11 @@ public class PlayerMovement : MonoBehaviour
         {
             Die();
             Scoring.totalLives--;
+
+            if(Scoring.totalLives < 0)
+            {
+                GameOver();
+            }
         }
     }
 
@@ -125,10 +130,10 @@ public class PlayerMovement : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    //private void GameOver()
-    //{
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    //}
+    private void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
 
 }
 
