@@ -1,223 +1,223 @@
 fileFormatVersion: 2
-guid: ae9601efa341c8e46881ed773ca69bb3
+guid: 3a0e0e9389f595442bff65be2c3c7c67
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 21300000
-    second: trees-trunk-white_0
+    second: trees-trunk-dark_0
   - first:
       213: 21300002
-    second: trees-trunk-white_1
+    second: trees-trunk-dark_1
   - first:
       213: 21300004
-    second: trees-trunk-white_2
+    second: trees-trunk-dark_2
   - first:
       213: 21300006
-    second: trees-trunk-white_3
+    second: trees-trunk-dark_3
   - first:
       213: 21300008
-    second: trees-trunk-white_4
+    second: trees-trunk-dark_4
   - first:
       213: 21300010
-    second: trees-trunk-white_5
+    second: trees-trunk-dark_5
   - first:
       213: 21300012
-    second: trees-trunk-white_6
+    second: trees-trunk-dark_6
   - first:
       213: 21300014
-    second: trees-trunk-white_7
+    second: trees-trunk-dark_7
   - first:
       213: 21300016
-    second: trees-trunk-white_8
+    second: trees-trunk-dark_8
   - first:
       213: 21300018
-    second: trees-trunk-white_9
+    second: trees-trunk-dark_9
   - first:
       213: 21300020
-    second: trees-trunk-white_10
+    second: trees-trunk-dark_10
   - first:
       213: 21300022
-    second: trees-trunk-white_11
+    second: trees-trunk-dark_11
   - first:
       213: 21300024
-    second: trees-trunk-white_12
+    second: trees-trunk-dark_12
   - first:
       213: 21300026
-    second: trees-trunk-white_13
+    second: trees-trunk-dark_13
   - first:
       213: 21300028
-    second: trees-trunk-white_14
+    second: trees-trunk-dark_14
   - first:
       213: 21300030
-    second: trees-trunk-white_15
+    second: trees-trunk-dark_15
   - first:
       213: 21300032
-    second: trees-trunk-white_16
+    second: trees-trunk-dark_16
   - first:
       213: 21300034
-    second: trees-trunk-white_17
+    second: trees-trunk-dark_17
   - first:
       213: 21300036
-    second: trees-trunk-white_18
+    second: trees-trunk-dark_18
   - first:
       213: 21300038
-    second: trees-trunk-white_19
+    second: trees-trunk-dark_19
   - first:
       213: 21300040
-    second: trees-trunk-white_20
+    second: trees-trunk-dark_20
   - first:
       213: 21300042
-    second: trees-trunk-white_21
+    second: trees-trunk-dark_21
   - first:
       213: 21300044
-    second: trees-trunk-white_22
+    second: trees-trunk-dark_22
   - first:
       213: 21300046
-    second: trees-trunk-white_23
+    second: trees-trunk-dark_23
   - first:
       213: 21300048
-    second: trees-trunk-white_24
+    second: trees-trunk-dark_24
   - first:
       213: 21300050
-    second: trees-trunk-white_25
+    second: trees-trunk-dark_25
   - first:
       213: 21300052
-    second: trees-trunk-white_26
+    second: trees-trunk-dark_26
   - first:
       213: 21300054
-    second: trees-trunk-white_27
+    second: trees-trunk-dark_27
   - first:
       213: 21300056
-    second: trees-trunk-white_28
+    second: trees-trunk-dark_28
   - first:
       213: 21300058
-    second: trees-trunk-white_29
+    second: trees-trunk-dark_29
   - first:
       213: 21300060
-    second: trees-trunk-white_30
+    second: trees-trunk-dark_30
   - first:
       213: 21300062
-    second: trees-trunk-white_31
+    second: trees-trunk-dark_31
   - first:
       213: 21300064
-    second: trees-trunk-white_32
+    second: trees-trunk-dark_32
   - first:
       213: 21300066
-    second: trees-trunk-white_33
+    second: trees-trunk-dark_33
   - first:
       213: 21300068
-    second: trees-trunk-white_34
+    second: trees-trunk-dark_34
   - first:
       213: 21300070
-    second: trees-trunk-white_35
+    second: trees-trunk-dark_35
   - first:
       213: 21300072
-    second: trees-trunk-white_36
+    second: trees-trunk-dark_36
   - first:
       213: 21300074
-    second: trees-trunk-white_37
+    second: trees-trunk-dark_37
   - first:
       213: 21300076
-    second: trees-trunk-white_38
+    second: trees-trunk-dark_38
   - first:
       213: 21300078
-    second: trees-trunk-white_39
+    second: trees-trunk-dark_39
   - first:
       213: 21300080
-    second: trees-trunk-white_40
+    second: trees-trunk-dark_40
   - first:
       213: 21300082
-    second: trees-trunk-white_41
+    second: trees-trunk-dark_41
   - first:
       213: 21300084
-    second: trees-trunk-white_42
+    second: trees-trunk-dark_42
   - first:
       213: 21300086
-    second: trees-trunk-white_43
+    second: trees-trunk-dark_43
   - first:
       213: 21300088
-    second: trees-trunk-white_44
+    second: trees-trunk-dark_44
   - first:
       213: 21300090
-    second: trees-trunk-white_45
+    second: trees-trunk-dark_45
   - first:
       213: 21300092
-    second: trees-trunk-white_46
+    second: trees-trunk-dark_46
   - first:
       213: 21300094
-    second: trees-trunk-white_47
+    second: trees-trunk-dark_47
   - first:
       213: 21300096
-    second: trees-trunk-white_48
+    second: trees-trunk-dark_48
   - first:
       213: 21300098
-    second: trees-trunk-white_49
+    second: trees-trunk-dark_49
   - first:
       213: 21300100
-    second: trees-trunk-white_50
+    second: trees-trunk-dark_50
   - first:
       213: 21300102
-    second: trees-trunk-white_51
+    second: trees-trunk-dark_51
   - first:
       213: 21300104
-    second: trees-trunk-white_52
+    second: trees-trunk-dark_52
   - first:
       213: 21300106
-    second: trees-trunk-white_53
+    second: trees-trunk-dark_53
   - first:
       213: 21300108
-    second: trees-trunk-white_54
+    second: trees-trunk-dark_54
   - first:
       213: 21300110
-    second: trees-trunk-white_55
+    second: trees-trunk-dark_55
   - first:
       213: 21300112
-    second: trees-trunk-white_56
+    second: trees-trunk-dark_56
   - first:
       213: 21300114
-    second: trees-trunk-white_57
+    second: trees-trunk-dark_57
   - first:
       213: 21300116
-    second: trees-trunk-white_58
+    second: trees-trunk-dark_58
   - first:
       213: 21300118
-    second: trees-trunk-white_59
+    second: trees-trunk-dark_59
   - first:
       213: 21300120
-    second: trees-trunk-white_60
+    second: trees-trunk-dark_60
   - first:
       213: 21300122
-    second: trees-trunk-white_61
+    second: trees-trunk-dark_61
   - first:
       213: 21300124
-    second: trees-trunk-white_62
+    second: trees-trunk-dark_62
   - first:
       213: 21300126
-    second: trees-trunk-white_63
+    second: trees-trunk-dark_63
   - first:
       213: 21300128
-    second: trees-trunk-white_64
+    second: trees-trunk-dark_64
   - first:
       213: 21300130
-    second: trees-trunk-white_65
+    second: trees-trunk-dark_65
   - first:
       213: 21300132
-    second: trees-trunk-white_66
+    second: trees-trunk-dark_66
   - first:
       213: 21300134
-    second: trees-trunk-white_67
+    second: trees-trunk-dark_67
   - first:
       213: 21300136
-    second: trees-trunk-white_68
+    second: trees-trunk-dark_68
   - first:
       213: 21300138
-    second: trees-trunk-white_69
+    second: trees-trunk-dark_69
   - first:
       213: 21300140
-    second: trees-trunk-white_70
+    second: trees-trunk-dark_70
   - first:
       213: 21300142
-    second: trees-trunk-white_71
+    second: trees-trunk-dark_71
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -333,7 +333,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: trees-trunk-white_0
+      name: trees-trunk-dark_0
       rect:
         serializedVersion: 2
         x: 0
@@ -354,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_1
+      name: trees-trunk-dark_1
       rect:
         serializedVersion: 2
         x: 64
@@ -375,7 +375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_2
+      name: trees-trunk-dark_2
       rect:
         serializedVersion: 2
         x: 128
@@ -396,7 +396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_3
+      name: trees-trunk-dark_3
       rect:
         serializedVersion: 2
         x: 192
@@ -417,7 +417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_4
+      name: trees-trunk-dark_4
       rect:
         serializedVersion: 2
         x: 256
@@ -438,7 +438,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_5
+      name: trees-trunk-dark_5
       rect:
         serializedVersion: 2
         x: 320
@@ -459,7 +459,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_6
+      name: trees-trunk-dark_6
       rect:
         serializedVersion: 2
         x: 384
@@ -480,7 +480,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_7
+      name: trees-trunk-dark_7
       rect:
         serializedVersion: 2
         x: 448
@@ -501,7 +501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_8
+      name: trees-trunk-dark_8
       rect:
         serializedVersion: 2
         x: 512
@@ -522,7 +522,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_9
+      name: trees-trunk-dark_9
       rect:
         serializedVersion: 2
         x: 576
@@ -543,7 +543,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_10
+      name: trees-trunk-dark_10
       rect:
         serializedVersion: 2
         x: 640
@@ -564,7 +564,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_11
+      name: trees-trunk-dark_11
       rect:
         serializedVersion: 2
         x: 704
@@ -585,7 +585,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_12
+      name: trees-trunk-dark_12
       rect:
         serializedVersion: 2
         x: 768
@@ -606,7 +606,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_13
+      name: trees-trunk-dark_13
       rect:
         serializedVersion: 2
         x: 832
@@ -627,7 +627,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_14
+      name: trees-trunk-dark_14
       rect:
         serializedVersion: 2
         x: 896
@@ -648,7 +648,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_15
+      name: trees-trunk-dark_15
       rect:
         serializedVersion: 2
         x: 0
@@ -669,7 +669,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_16
+      name: trees-trunk-dark_16
       rect:
         serializedVersion: 2
         x: 64
@@ -690,7 +690,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_17
+      name: trees-trunk-dark_17
       rect:
         serializedVersion: 2
         x: 128
@@ -711,7 +711,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_18
+      name: trees-trunk-dark_18
       rect:
         serializedVersion: 2
         x: 192
@@ -732,7 +732,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_19
+      name: trees-trunk-dark_19
       rect:
         serializedVersion: 2
         x: 256
@@ -753,7 +753,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_20
+      name: trees-trunk-dark_20
       rect:
         serializedVersion: 2
         x: 320
@@ -774,7 +774,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_21
+      name: trees-trunk-dark_21
       rect:
         serializedVersion: 2
         x: 384
@@ -795,7 +795,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_22
+      name: trees-trunk-dark_22
       rect:
         serializedVersion: 2
         x: 448
@@ -816,7 +816,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_23
+      name: trees-trunk-dark_23
       rect:
         serializedVersion: 2
         x: 512
@@ -837,7 +837,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_24
+      name: trees-trunk-dark_24
       rect:
         serializedVersion: 2
         x: 576
@@ -858,7 +858,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_25
+      name: trees-trunk-dark_25
       rect:
         serializedVersion: 2
         x: 640
@@ -879,7 +879,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_26
+      name: trees-trunk-dark_26
       rect:
         serializedVersion: 2
         x: 704
@@ -900,7 +900,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_27
+      name: trees-trunk-dark_27
       rect:
         serializedVersion: 2
         x: 768
@@ -921,7 +921,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_28
+      name: trees-trunk-dark_28
       rect:
         serializedVersion: 2
         x: 832
@@ -942,7 +942,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_29
+      name: trees-trunk-dark_29
       rect:
         serializedVersion: 2
         x: 896
@@ -963,7 +963,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_30
+      name: trees-trunk-dark_30
       rect:
         serializedVersion: 2
         x: 0
@@ -984,7 +984,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_31
+      name: trees-trunk-dark_31
       rect:
         serializedVersion: 2
         x: 64
@@ -1005,7 +1005,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_32
+      name: trees-trunk-dark_32
       rect:
         serializedVersion: 2
         x: 128
@@ -1026,7 +1026,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_33
+      name: trees-trunk-dark_33
       rect:
         serializedVersion: 2
         x: 192
@@ -1047,7 +1047,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_34
+      name: trees-trunk-dark_34
       rect:
         serializedVersion: 2
         x: 256
@@ -1068,7 +1068,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_35
+      name: trees-trunk-dark_35
       rect:
         serializedVersion: 2
         x: 320
@@ -1089,7 +1089,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_36
+      name: trees-trunk-dark_36
       rect:
         serializedVersion: 2
         x: 384
@@ -1110,7 +1110,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_37
+      name: trees-trunk-dark_37
       rect:
         serializedVersion: 2
         x: 448
@@ -1131,7 +1131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_38
+      name: trees-trunk-dark_38
       rect:
         serializedVersion: 2
         x: 512
@@ -1152,7 +1152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_39
+      name: trees-trunk-dark_39
       rect:
         serializedVersion: 2
         x: 576
@@ -1173,7 +1173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_40
+      name: trees-trunk-dark_40
       rect:
         serializedVersion: 2
         x: 640
@@ -1194,7 +1194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_41
+      name: trees-trunk-dark_41
       rect:
         serializedVersion: 2
         x: 704
@@ -1215,7 +1215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_42
+      name: trees-trunk-dark_42
       rect:
         serializedVersion: 2
         x: 768
@@ -1236,7 +1236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_43
+      name: trees-trunk-dark_43
       rect:
         serializedVersion: 2
         x: 832
@@ -1257,7 +1257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_44
+      name: trees-trunk-dark_44
       rect:
         serializedVersion: 2
         x: 0
@@ -1278,7 +1278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_45
+      name: trees-trunk-dark_45
       rect:
         serializedVersion: 2
         x: 64
@@ -1299,7 +1299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_46
+      name: trees-trunk-dark_46
       rect:
         serializedVersion: 2
         x: 128
@@ -1320,7 +1320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_47
+      name: trees-trunk-dark_47
       rect:
         serializedVersion: 2
         x: 192
@@ -1341,7 +1341,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_48
+      name: trees-trunk-dark_48
       rect:
         serializedVersion: 2
         x: 256
@@ -1362,7 +1362,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_49
+      name: trees-trunk-dark_49
       rect:
         serializedVersion: 2
         x: 320
@@ -1383,7 +1383,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_50
+      name: trees-trunk-dark_50
       rect:
         serializedVersion: 2
         x: 384
@@ -1404,7 +1404,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_51
+      name: trees-trunk-dark_51
       rect:
         serializedVersion: 2
         x: 448
@@ -1425,7 +1425,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_52
+      name: trees-trunk-dark_52
       rect:
         serializedVersion: 2
         x: 512
@@ -1446,7 +1446,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_53
+      name: trees-trunk-dark_53
       rect:
         serializedVersion: 2
         x: 576
@@ -1467,7 +1467,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_54
+      name: trees-trunk-dark_54
       rect:
         serializedVersion: 2
         x: 640
@@ -1488,7 +1488,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_55
+      name: trees-trunk-dark_55
       rect:
         serializedVersion: 2
         x: 704
@@ -1509,7 +1509,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_56
+      name: trees-trunk-dark_56
       rect:
         serializedVersion: 2
         x: 768
@@ -1530,7 +1530,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_57
+      name: trees-trunk-dark_57
       rect:
         serializedVersion: 2
         x: 832
@@ -1551,7 +1551,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_58
+      name: trees-trunk-dark_58
       rect:
         serializedVersion: 2
         x: 0
@@ -1572,7 +1572,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_59
+      name: trees-trunk-dark_59
       rect:
         serializedVersion: 2
         x: 64
@@ -1593,7 +1593,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_60
+      name: trees-trunk-dark_60
       rect:
         serializedVersion: 2
         x: 128
@@ -1614,7 +1614,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_61
+      name: trees-trunk-dark_61
       rect:
         serializedVersion: 2
         x: 192
@@ -1635,7 +1635,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_62
+      name: trees-trunk-dark_62
       rect:
         serializedVersion: 2
         x: 256
@@ -1656,7 +1656,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_63
+      name: trees-trunk-dark_63
       rect:
         serializedVersion: 2
         x: 320
@@ -1677,7 +1677,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_64
+      name: trees-trunk-dark_64
       rect:
         serializedVersion: 2
         x: 384
@@ -1698,7 +1698,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_65
+      name: trees-trunk-dark_65
       rect:
         serializedVersion: 2
         x: 448
@@ -1719,7 +1719,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_66
+      name: trees-trunk-dark_66
       rect:
         serializedVersion: 2
         x: 512
@@ -1740,7 +1740,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_67
+      name: trees-trunk-dark_67
       rect:
         serializedVersion: 2
         x: 576
@@ -1761,7 +1761,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_68
+      name: trees-trunk-dark_68
       rect:
         serializedVersion: 2
         x: 640
@@ -1782,7 +1782,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_69
+      name: trees-trunk-dark_69
       rect:
         serializedVersion: 2
         x: 704
@@ -1803,7 +1803,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_70
+      name: trees-trunk-dark_70
       rect:
         serializedVersion: 2
         x: 768
@@ -1824,7 +1824,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees-trunk-white_71
+      name: trees-trunk-dark_71
       rect:
         serializedVersion: 2
         x: 832
@@ -1855,78 +1855,78 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      trees-trunk-white_68: 21300136
-      trees-trunk-white_22: 21300044
-      trees-trunk-white_57: 21300114
-      trees-trunk-white_71: 21300142
-      trees-trunk-white_36: 21300072
-      trees-trunk-white_7: 21300014
-      trees-trunk-white_14: 21300028
-      trees-trunk-white_39: 21300078
-      trees-trunk-white_53: 21300106
-      trees-trunk-white_20: 21300040
-      trees-trunk-white_42: 21300084
-      trees-trunk-white_40: 21300080
-      trees-trunk-white_3: 21300006
-      trees-trunk-white_31: 21300062
-      trees-trunk-white_41: 21300082
-      trees-trunk-white_51: 21300102
-      trees-trunk-white_44: 21300088
-      trees-trunk-white_1: 21300002
-      trees-trunk-white_60: 21300120
-      trees-trunk-white_47: 21300094
-      trees-trunk-white_62: 21300124
-      trees-trunk-white_10: 21300020
-      trees-trunk-white_25: 21300050
-      trees-trunk-white_56: 21300112
-      trees-trunk-white_9: 21300018
-      trees-trunk-white_35: 21300070
-      trees-trunk-white_38: 21300076
-      trees-trunk-white_0: 21300000
-      trees-trunk-white_32: 21300064
-      trees-trunk-white_4: 21300008
-      trees-trunk-white_28: 21300056
-      trees-trunk-white_26: 21300052
-      trees-trunk-white_69: 21300138
-      trees-trunk-white_18: 21300036
-      trees-trunk-white_33: 21300066
-      trees-trunk-white_17: 21300034
-      trees-trunk-white_48: 21300096
-      trees-trunk-white_12: 21300024
-      trees-trunk-white_45: 21300090
-      trees-trunk-white_61: 21300122
-      trees-trunk-white_46: 21300092
-      trees-trunk-white_27: 21300054
-      trees-trunk-white_2: 21300004
-      trees-trunk-white_24: 21300048
-      trees-trunk-white_23: 21300046
-      trees-trunk-white_34: 21300068
-      trees-trunk-white_6: 21300012
-      trees-trunk-white_30: 21300060
-      trees-trunk-white_58: 21300116
-      trees-trunk-white_64: 21300128
-      trees-trunk-white_50: 21300100
-      trees-trunk-white_67: 21300134
-      trees-trunk-white_43: 21300086
-      trees-trunk-white_70: 21300140
-      trees-trunk-white_59: 21300118
-      trees-trunk-white_5: 21300010
-      trees-trunk-white_11: 21300022
-      trees-trunk-white_37: 21300074
-      trees-trunk-white_49: 21300098
-      trees-trunk-white_52: 21300104
-      trees-trunk-white_54: 21300108
-      trees-trunk-white_15: 21300030
-      trees-trunk-white_8: 21300016
-      trees-trunk-white_55: 21300110
-      trees-trunk-white_65: 21300130
-      trees-trunk-white_19: 21300038
-      trees-trunk-white_29: 21300058
-      trees-trunk-white_16: 21300032
-      trees-trunk-white_21: 21300042
-      trees-trunk-white_13: 21300026
-      trees-trunk-white_66: 21300132
-      trees-trunk-white_63: 21300126
+      trees-trunk-dark_50: 21300100
+      trees-trunk-dark_52: 21300104
+      trees-trunk-dark_20: 21300040
+      trees-trunk-dark_40: 21300080
+      trees-trunk-dark_56: 21300112
+      trees-trunk-dark_2: 21300004
+      trees-trunk-dark_27: 21300054
+      trees-trunk-dark_36: 21300072
+      trees-trunk-dark_3: 21300006
+      trees-trunk-dark_5: 21300010
+      trees-trunk-dark_6: 21300012
+      trees-trunk-dark_16: 21300032
+      trees-trunk-dark_41: 21300082
+      trees-trunk-dark_14: 21300028
+      trees-trunk-dark_21: 21300042
+      trees-trunk-dark_29: 21300058
+      trees-trunk-dark_66: 21300132
+      trees-trunk-dark_25: 21300050
+      trees-trunk-dark_43: 21300086
+      trees-trunk-dark_57: 21300114
+      trees-trunk-dark_67: 21300134
+      trees-trunk-dark_7: 21300014
+      trees-trunk-dark_45: 21300090
+      trees-trunk-dark_63: 21300126
+      trees-trunk-dark_26: 21300052
+      trees-trunk-dark_0: 21300000
+      trees-trunk-dark_32: 21300064
+      trees-trunk-dark_33: 21300066
+      trees-trunk-dark_18: 21300036
+      trees-trunk-dark_15: 21300030
+      trees-trunk-dark_51: 21300102
+      trees-trunk-dark_39: 21300078
+      trees-trunk-dark_17: 21300034
+      trees-trunk-dark_59: 21300118
+      trees-trunk-dark_12: 21300024
+      trees-trunk-dark_69: 21300138
+      trees-trunk-dark_37: 21300074
+      trees-trunk-dark_28: 21300056
+      trees-trunk-dark_68: 21300136
+      trees-trunk-dark_47: 21300094
+      trees-trunk-dark_58: 21300116
+      trees-trunk-dark_34: 21300068
+      trees-trunk-dark_22: 21300044
+      trees-trunk-dark_1: 21300002
+      trees-trunk-dark_60: 21300120
+      trees-trunk-dark_54: 21300108
+      trees-trunk-dark_62: 21300124
+      trees-trunk-dark_44: 21300088
+      trees-trunk-dark_38: 21300076
+      trees-trunk-dark_4: 21300008
+      trees-trunk-dark_23: 21300046
+      trees-trunk-dark_53: 21300106
+      trees-trunk-dark_24: 21300048
+      trees-trunk-dark_55: 21300110
+      trees-trunk-dark_35: 21300070
+      trees-trunk-dark_9: 21300018
+      trees-trunk-dark_13: 21300026
+      trees-trunk-dark_64: 21300128
+      trees-trunk-dark_71: 21300142
+      trees-trunk-dark_65: 21300130
+      trees-trunk-dark_10: 21300020
+      trees-trunk-dark_46: 21300092
+      trees-trunk-dark_48: 21300096
+      trees-trunk-dark_30: 21300060
+      trees-trunk-dark_31: 21300062
+      trees-trunk-dark_11: 21300022
+      trees-trunk-dark_49: 21300098
+      trees-trunk-dark_19: 21300038
+      trees-trunk-dark_61: 21300122
+      trees-trunk-dark_42: 21300084
+      trees-trunk-dark_70: 21300140
+      trees-trunk-dark_8: 21300016
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
