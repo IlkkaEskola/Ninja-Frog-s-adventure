@@ -9,19 +9,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3148924875525113545, guid: 71a85557eefc7f54b90754b71cb15742, type: 3}
       propertyPath: m_Name
-      value: MovingPlatformSnow
+      value: MovingPlatformSnow Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3148924875525113547, guid: 71a85557eefc7f54b90754b71cb15742, type: 3}
       propertyPath: m_Color.b
-      value: 0.9514115
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3148924875525113547, guid: 71a85557eefc7f54b90754b71cb15742, type: 3}
       propertyPath: m_Color.g
-      value: 0.990566
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3148924875525113547, guid: 71a85557eefc7f54b90754b71cb15742, type: 3}
       propertyPath: m_Color.r
-      value: 0.4999555
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3148924875525113548, guid: 71a85557eefc7f54b90754b71cb15742, type: 3}
       propertyPath: m_RootOrder
