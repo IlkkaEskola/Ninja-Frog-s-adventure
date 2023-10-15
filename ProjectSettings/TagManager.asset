@@ -7,6 +7,8 @@ TagManager:
   - Trap
   - Collectable
   - Cherry
+  - Gate
+  - Key
   layers:
   - Default
   - TransparentFX
