@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float moveSpeed;
     public float jumpForce;
-    private float horizontalMovement;
+    private bool hasKey;
 
     public Transform groundCheckPosition;
     public float groundCheckRadius;
@@ -24,11 +24,12 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private AudioSource jumpSoundEffect;
     [SerializeField] private AudioSource deathSoundEffect;
+    [SerializeField] private AudioSource itemCollectSoundEffect;
+    [SerializeField] private AudioSource finishSound;
 
     [SerializeField] private Text livesText;
 
-    [SerializeField] private AudioSource itemCollectSoundEffect;
-
+    
 
 
     //[SerializeField] private Text livesText;
@@ -113,6 +114,19 @@ public class PlayerMovement : MonoBehaviour
             livesText.text = "Lives: " + Scoring.totalLives;
             itemCollectSoundEffect.Play();
         }
+
+        if (collision.gameObject.CompareTag("Key"))
+        {
+            hasKey = true;
+            Destroy(collision.gameObject);
+            itemCollectSoundEffect.Play();
+        }
+
+        if (collision.gameObject.CompareTag("Gate") && hasKey)
+        {
+            finishSound.Play();
+            Invoke("LevelComplete", 2f);
+        }
     }
 
     private void Die()
@@ -133,6 +147,11 @@ public class PlayerMovement : MonoBehaviour
     private void GameOver()
     {
         SceneManager.LoadScene("GameOver");
+    }
+
+    private void LevelComplete()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 }
