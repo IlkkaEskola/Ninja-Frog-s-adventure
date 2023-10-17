@@ -9214,7 +9214,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -8.838711, y: 0.047056437}
+  m_Offset: {x: -8.730438, y: 0.047056437}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -9225,7 +9225,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8330431, y: 6.4414554}
+  m_Size: {x: 1.0495872, y: 6.4414554}
   m_EdgeRadius: 0
 --- !u!4 &709574063
 Transform:
@@ -9255,7 +9255,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 93.19631, y: 4.801303}
+  m_Offset: {x: 93.27751, y: 4.801303}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -9266,7 +9266,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.74638367, y: 3.8761425}
+  m_Size: {x: 0.9087906, y: 3.8761425}
   m_EdgeRadius: 0
 --- !u!61 &709574065
 BoxCollider2D:
@@ -9281,7 +9281,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 95.745926, y: 1.2400877}
+  m_Offset: {x: 95.68277, y: 1.2400877}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -9292,7 +9292,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.39819336, y: 6.7992024}
+  m_Size: {x: 0.52451324, y: 6.7992024}
   m_EdgeRadius: 0
 --- !u!61 &709574066
 BoxCollider2D:
@@ -9307,7 +9307,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 83.14818, y: -1.2291551}
+  m_Offset: {x: 83.256454, y: -1.2291551}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -9318,7 +9318,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.805603, y: 1.8793507}
+  m_Size: {x: 1.0221481, y: 1.8793507}
   m_EdgeRadius: 0
 --- !u!1 &724150785
 GameObject:
