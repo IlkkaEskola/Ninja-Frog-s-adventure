@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScorpionMovement : MonoBehaviour
+public class EnemyMovement : MonoBehaviour
 {
     public Transform startPoint; // alku piste
     public Transform endPoint;   // loppupiste
