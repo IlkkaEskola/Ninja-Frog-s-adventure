@@ -14,6 +14,9 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
     private bool hasKey;
 
+    public Transform playerTransform;
+    public float wallJumpRayLength = 0.5f;
+
     public Transform groundCheckPosition;
     public float groundCheckRadius;
     public LayerMask groundCheckLayer;
@@ -52,15 +55,6 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0, 0);
 
-        if (Physics2D.OverlapCircle(groundCheckPosition.position, groundCheckRadius, groundCheckLayer))
-        {
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false;
-        }
-
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
             // Joko a tai d pohjassa
@@ -71,7 +65,20 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("Run", false);
         }
-        
+
+
+
+
+        //Tarkistetaan onko pelaaja maassa
+        if (Physics2D.OverlapCircle(groundCheckPosition.position, groundCheckRadius, groundCheckLayer))
+        {
+            isGrounded = true;
+        }
+        else
+        {
+            isGrounded = false;
+        }
+
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb2D.velocity = new Vector2(0, jumpForce);
@@ -84,24 +91,21 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Fall", true);
         }
 
-        //if (gameObject.transform.position.y < -10)
-        //{
-            //Die();
-            
-        //}
+        
     }
 
-    
+   
+   
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Trap"))
         {
-            Die();
             Scoring.totalLives--;
-
+            Die();
+     
             if(Scoring.totalLives < 0)
             {
-                GameOver();
+                Invoke("GameOver", 2f);
             }
         }
     }
@@ -136,14 +140,15 @@ public class PlayerMovement : MonoBehaviour
         animator.SetTrigger("Die");
         moveSpeed = 0;
         deathSoundEffect.Play();
-
-
     }
 
+
+    
     private void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    
 
     private void GameOver()
     {
