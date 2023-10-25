@@ -147,5 +147,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPoint: {fileID: 0}
   endPoint: {fileID: 0}
-  speed: 2
+  speed: 4
   stoppingDistance: 0.1
