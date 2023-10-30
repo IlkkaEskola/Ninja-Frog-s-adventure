@@ -164,6 +164,7 @@ MonoBehaviour:
   isGrounded: 0
   rb2D: {fileID: 0}
   animator: {fileID: 0}
+  keyImage: {fileID: 5699426201056875700, guid: 230a550bcbe604748b87c8950e630d58, type: 3}
   jumpSoundEffect: {fileID: 4838132037367888256}
   deathSoundEffect: {fileID: 4838132037367888258}
   itemCollectSoundEffect: {fileID: 4838132037367888259}

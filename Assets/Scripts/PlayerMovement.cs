@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D rb2D;
     public Animator animator;
+    
 
     [SerializeField] private AudioSource jumpSoundEffect;
     [SerializeField] private AudioSource deathSoundEffect;
@@ -44,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         livesText.text = "Lives: " + Scoring.totalLives;
+        
 
 
         //livesText.text = "Lives: " + totalLives;
@@ -125,6 +127,7 @@ public class PlayerMovement : MonoBehaviour
             hasKey = true;
             Destroy(collision.gameObject);
             itemCollectSoundEffect.Play();
+
         }
 
         if (collision.gameObject.CompareTag("Gate") && hasKey)
