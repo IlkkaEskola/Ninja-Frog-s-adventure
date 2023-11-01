@@ -88,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Trap"))
         {
+            Cherries.totalCherries = 0;
             Scoring.totalLives--;
             Die();
      
@@ -115,8 +116,7 @@ public class PlayerMovement : MonoBehaviour
                 livesText.text = "Lives: " + Scoring.totalLives;
 
             }
-            //Scoring.totalLives++;
-            //livesText.text = "Lives: " + Scoring.totalLives;
+            
         }
 
         if (collision.gameObject.CompareTag("Key"))
