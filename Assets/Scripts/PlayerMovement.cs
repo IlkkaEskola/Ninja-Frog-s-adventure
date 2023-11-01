@@ -32,23 +32,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioSource finishSound;
 
     [SerializeField] private Text livesText;
+    [SerializeField] private Text cherriesText;
 
-    
 
-
-    //[SerializeField] private Text livesText;
-
-    
 
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         livesText.text = "Lives: " + Scoring.totalLives;
-        
-
-
-        //livesText.text = "Lives: " + totalLives;
+        cherriesText.text = "Cherries: " + Cherries.totalCherries;
     }
 
 
@@ -110,9 +103,20 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Cherry"))
         {
             Destroy(collision.gameObject);
-            Scoring.totalLives++;
-            livesText.text = "Lives: " + Scoring.totalLives;
+            Cherries.totalCherries++;
+            cherriesText.text = "Cherries: " + Cherries.totalCherries;
             itemCollectSoundEffect.Play();
+
+            if(Cherries.totalCherries == 5)
+            {
+                Cherries.totalCherries = 0;
+                cherriesText.text = "Cherries: " + Cherries.totalCherries;
+                Scoring.totalLives++;
+                livesText.text = "Lives: " + Scoring.totalLives;
+
+            }
+            //Scoring.totalLives++;
+            //livesText.text = "Lives: " + Scoring.totalLives;
         }
 
         if (collision.gameObject.CompareTag("Key"))
