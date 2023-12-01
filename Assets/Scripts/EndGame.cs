@@ -10,7 +10,7 @@ public class EndGame : MonoBehaviour
     public void Quit()
     {
         Cherries.totalCherries = 0;
-        Scoring.totalLives = 0;
+        Lives.totalLives = 0;
         SceneManager.LoadScene("MainMenu");
     }
 }

@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        livesText.text = "Lives: " + Scoring.totalLives;
+        livesText.text = "Lives: " + Lives.totalLives;
         cherriesText.text = "Cherries: " + Cherries.totalCherries;
     }
 
@@ -89,10 +89,10 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Trap"))
         {
             Cherries.totalCherries = 0;
-            Scoring.totalLives--;
+            Lives.totalLives--;
             Die();
      
-            if(Scoring.totalLives < 0)
+            if(Lives.totalLives < 0)
             {
                 Invoke("GameOver", 2f);
             }
@@ -112,8 +112,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 Cherries.totalCherries = 0;
                 cherriesText.text = "Cherries: " + Cherries.totalCherries;
-                Scoring.totalLives++;
-                livesText.text = "Lives: " + Scoring.totalLives;
+                Lives.totalLives++;
+                livesText.text = "Lives: " + Lives.totalLives;
 
             }
             
