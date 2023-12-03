@@ -22,8 +22,8 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundCheckLayer;
     public bool isGrounded;
 
-    public Rigidbody2D rb2D;
-    public Animator animator;
+    private Rigidbody2D rb2D;
+    private Animator animator;
     
 
     [SerializeField] private AudioSource jumpSoundEffect;
@@ -47,6 +47,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
+        
 
         transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0, 0);
 
@@ -78,13 +80,21 @@ public class PlayerMovement : MonoBehaviour
             animator.SetTrigger("Jump");
             jumpSoundEffect.Play();
         }
+
         
         //Pelaaja kuolee, jos putoaa kielekkeeltä
-        //if(gameObject.transform.position.y < -5)
-        //{
-        //    Die();
-        //}
-        
+        /*if (transform.position.y < -5)
+        {
+            Cherries.totalCherries = 0;
+            Lives.totalLives--;
+            Die();
+
+            if (Lives.totalLives < 0)
+            {
+                Invoke("GameOver", 2f);
+            }
+        }*/
+
     }
 
    
@@ -148,10 +158,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
     
-
-
-
-
     private void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
