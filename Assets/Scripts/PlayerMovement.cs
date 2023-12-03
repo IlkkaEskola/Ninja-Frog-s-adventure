@@ -62,8 +62,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-
-
         //Tarkistetaan onko pelaaja maassa
         if (Physics2D.OverlapCircle(groundCheckPosition.position, groundCheckRadius, groundCheckLayer))
         {
@@ -79,7 +77,14 @@ public class PlayerMovement : MonoBehaviour
             rb2D.velocity = new Vector2(0, jumpForce);
             animator.SetTrigger("Jump");
             jumpSoundEffect.Play();
-        }   
+        }
+        
+        //Pelaaja kuolee, jos putoaa kielekkeeltä
+        //if(gameObject.transform.position.y < -5)
+        //{
+        //    Die();
+        //}
+        
     }
 
    
@@ -142,9 +147,11 @@ public class PlayerMovement : MonoBehaviour
         deathSoundEffect.Play();
     }
 
+    
 
-    
-    
+
+
+
     private void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
