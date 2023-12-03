@@ -47,6 +47,9 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
         Cherries.totalCherries = 0;
         Lives.totalLives = 0;
         SceneManager.LoadScene("MainMenu");
