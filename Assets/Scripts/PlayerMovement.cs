@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private Text livesText;
     [SerializeField] private Text cherriesText;
+    [SerializeField] private Text timeText;
 
 
 
@@ -83,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
 
         
         //Pelaaja kuolee, jos putoaa kielekkeeltä
-        /*if (transform.position.y < -5)
+        /*if (transform.position.y < -8)
         {
             Cherries.totalCherries = 0;
             Lives.totalLives--;
