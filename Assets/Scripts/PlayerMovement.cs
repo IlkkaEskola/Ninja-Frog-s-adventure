@@ -45,13 +45,13 @@ public class PlayerMovement : MonoBehaviour
         livesText.text = "Lives: " + Lives.totalLives;
         cherriesText.text = "Cherries: " + Cherries.totalCherries;
         timeText.text = "Time: " + TimeCounter.timeLeft;
+
+        StartCoroutine(TimeRemaining());
     }
 
 
     void Update()
     {
-        TimeRemaining();
-
         transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0, 0);
 
         if (Input.GetAxisRaw("Horizontal") != 0)
@@ -105,8 +105,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Trap"))
         {
-            Cherries.totalCherries = 0;
-            Lives.totalLives--;
             Die();
      
             if(Lives.totalLives < 0)
@@ -151,14 +149,23 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void TimeRemaining()
+    IEnumerator TimeRemaining()
+    {
+        while(TimeCounter.timeLeft > 0) 
+        {
+            timeText.text = "Time: " + TimeCounter.timeLeft.ToString();
+            yield return new WaitForSeconds(1f);
+            TimeCounter.timeLeft--;
+        }
+    }
+    /*private void TimeRemaining()
     {
         if (TimeCounter.timeLeft > 0)
         {
             TimeCounter.timeLeft -= Time.deltaTime;
             timeText.text = "Time: " + TimeCounter.timeLeft;
         }
-    }
+    }*/
 
     private void Die()
     {
@@ -166,23 +173,28 @@ public class PlayerMovement : MonoBehaviour
         animator.SetTrigger("Die");
         moveSpeed = 0;
         deathSoundEffect.Play();
+        Cherries.totalCherries = 0;
+        Lives.totalLives--;
     }
 
-    
+
     private void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        TimeCounter.timeLeft = 90f;
     }
     
 
     private void GameOver()
     {
         SceneManager.LoadScene("GameOver");
+        TimeCounter.timeLeft = 90f;
     }
 
     private void LevelComplete()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        TimeCounter.timeLeft = 90f;
     }
 
 }
