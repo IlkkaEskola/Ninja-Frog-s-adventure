@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -43,13 +44,13 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         livesText.text = "Lives: " + Lives.totalLives;
         cherriesText.text = "Cherries: " + Cherries.totalCherries;
+        timeText.text = "Time: " + TimeCounter.timeLeft;
     }
 
 
     void Update()
     {
-
-        
+        TimeRemaining();
 
         transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0, 0);
 
@@ -147,6 +148,15 @@ public class PlayerMovement : MonoBehaviour
         {
             finishSound.Play();
             Invoke("LevelComplete", 2f);
+        }
+    }
+
+    private void TimeRemaining()
+    {
+        if (TimeCounter.timeLeft > 0)
+        {
+            TimeCounter.timeLeft -= Time.deltaTime;
+            timeText.text = "Time: " + TimeCounter.timeLeft;
         }
     }
 
