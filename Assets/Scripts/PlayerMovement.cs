@@ -9,8 +9,6 @@ using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
-    //private int totalLives = 3;
-
     public float moveSpeed;
     public float jumpForce;
     private bool hasKey;
@@ -26,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb2D;
     private Animator animator;
     
-
     [SerializeField] private AudioSource jumpSoundEffect;
     [SerializeField] private AudioSource deathSoundEffect;
     [SerializeField] private AudioSource itemCollectSoundEffect;
@@ -85,17 +82,17 @@ public class PlayerMovement : MonoBehaviour
 
         
         //Pelaaja kuolee, jos putoaa kielekkeeltä
-        /*if (transform.position.y < -8)
+        if (transform.position.y < -8)
         {
             Cherries.totalCherries = 0;
             Lives.totalLives--;
-            Die();
+            FallDeath();
 
             if (Lives.totalLives < 0)
             {
                 Invoke("GameOver", 2f);
             }
-        }*/
+        }
 
     }
 
@@ -157,6 +154,16 @@ public class PlayerMovement : MonoBehaviour
             yield return new WaitForSeconds(1f);
             TimeCounter.timeLeft--;
         }
+
+        if(TimeCounter.timeLeft <= 0) 
+        {
+            Die();
+
+            if (Lives.totalLives < 0)
+            {
+                Invoke("GameOver", 2f);
+            }
+        }
     }
     /*private void TimeRemaining()
     {
@@ -177,24 +184,33 @@ public class PlayerMovement : MonoBehaviour
         Lives.totalLives--;
     }
 
+    private void FallDeath()
+    {
+        rb2D.bodyType = RigidbodyType2D.Static;
+        animator.SetTrigger("Die");
+        moveSpeed = 0;
+        deathSoundEffect.Play();
+        Cherries.totalCherries = 0;
+        Lives.totalLives--;
+    }
 
     private void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        TimeCounter.timeLeft = 90f;
+        TimeCounter.timeLeft = 120f;
     }
     
 
     private void GameOver()
     {
         SceneManager.LoadScene("GameOver");
-        TimeCounter.timeLeft = 90f;
+        TimeCounter.timeLeft = 120f;
     }
 
     private void LevelComplete()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        TimeCounter.timeLeft = 90f;
+        TimeCounter.timeLeft = 120f;
     }
 
 }

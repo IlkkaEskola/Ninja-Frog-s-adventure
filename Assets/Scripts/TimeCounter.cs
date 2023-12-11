@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class TimeCounter : MonoBehaviour
 {
-    public static float timeLeft = 90f;
+    public static float timeLeft = 120f;
 }

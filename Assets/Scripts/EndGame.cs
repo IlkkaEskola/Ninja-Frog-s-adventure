@@ -11,7 +11,7 @@ public class EndGame : MonoBehaviour
     {
         Cherries.totalCherries = 0;
         Lives.totalLives = 0;
-        TimeCounter.timeLeft = 90f;
+        TimeCounter.timeLeft = 120f;
         SceneManager.LoadScene("MainMenu");
     }
 }
