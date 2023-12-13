@@ -10,6 +10,7 @@ using UnityEngine.UI;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
+    public float iceSpeed;
     public float jumpForce;
     private bool hasKey;
 
@@ -39,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        iceSpeed = moveSpeed * 1.5f;
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         livesText.text = "Lives: " + Lives.totalLives;
@@ -54,10 +56,12 @@ public class PlayerMovement : MonoBehaviour
         if (!onIce)
         {
             transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0, 0);
+            
         }
         else
         {
-            transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
+            transform.Translate(Input.GetAxis("Horizontal") * iceSpeed * Time.deltaTime, 0, 0);
+            
         }
 
         
@@ -67,6 +71,18 @@ public class PlayerMovement : MonoBehaviour
             // Joko a tai d pohjassa
             transform.localScale = new Vector3(Input.GetAxisRaw("Horizontal"), 1, 1);
             animator.SetBool("Run", true);
+
+            if (onIce)
+            {
+                animator.SetBool("Slide", true);
+               
+            }
+            else 
+            {
+                animator.SetBool("Slide", false);
+                
+            }
+                
         }
         else
         {
