@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundCheckLayer;
     public bool isGrounded;
 
+    public bool onIce = false;
+
     private Rigidbody2D rb2D;
     private Animator animator;
     
@@ -49,7 +51,16 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0, 0);
+        if (!onIce)
+        {
+            transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0, 0);
+        }
+        else
+        {
+            transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
+        }
+
+        
 
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
@@ -108,6 +119,19 @@ public class PlayerMovement : MonoBehaviour
             {
                 Invoke("GameOver", 2f);
             }
+        }
+
+        if (collision.gameObject.CompareTag("Ice"))
+        {
+            onIce = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ice"))
+        {
+            onIce = false;
         }
     }
 

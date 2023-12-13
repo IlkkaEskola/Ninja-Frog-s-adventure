@@ -9,6 +9,7 @@ TagManager:
   - Cherry
   - Gate
   - Key
+  - Ice
   layers:
   - Default
   - TransparentFX

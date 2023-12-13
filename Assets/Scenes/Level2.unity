@@ -58015,6 +58015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big Snowground
       objectReference: {fileID: 0}
+    - target: {fileID: 6987618196827679800, guid: 011ce12304e552c428100b0aae908cb0, type: 3}
+      propertyPath: m_TagString
+      value: Ice
+      objectReference: {fileID: 0}
     - target: {fileID: 6987618196827679806, guid: 011ce12304e552c428100b0aae908cb0, type: 3}
       propertyPath: m_RootOrder
       value: 3
