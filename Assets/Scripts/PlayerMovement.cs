@@ -109,7 +109,7 @@ public class PlayerMovement : MonoBehaviour
 
         
         //Pelaaja kuolee, jos putoaa kielekkeeltä
-        if (transform.position.y < -8)
+        /*if (transform.position.y < -8)
         {
             Cherries.totalCherries = 0;
             Lives.totalLives--;
@@ -119,7 +119,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 Invoke("GameOver", 2f);
             }
-        }
+        }*/
 
     }
 
@@ -132,6 +132,16 @@ public class PlayerMovement : MonoBehaviour
             Die();
      
             if(Lives.totalLives < 0)
+            {
+                Invoke("GameOver", 2f);
+            }
+        }
+
+        if (collision.gameObject.CompareTag("SnowBall"))
+        {
+            Die();
+
+            if (Lives.totalLives < 0)
             {
                 Invoke("GameOver", 2f);
             }
