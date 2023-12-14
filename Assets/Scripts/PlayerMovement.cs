@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private bool hasKey;
 
     public Transform playerTransform;
-    public float wallJumpRayLength = 0.5f;
+    //public float wallJumpRayLength = 0.5f;
 
     public Transform groundCheckPosition;
     public float groundCheckRadius;
@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        iceSpeed = moveSpeed * 1.5f;
+        iceSpeed = moveSpeed * 2f;
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         livesText.text = "Lives: " + Lives.totalLives;
@@ -51,8 +51,9 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    void Update()
+    private void Update()
     {
+        
         if (!onIce)
         {
             transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0, 0);
@@ -64,25 +65,23 @@ public class PlayerMovement : MonoBehaviour
             
         }
 
-        
+
 
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
             // Joko a tai d pohjassa
             transform.localScale = new Vector3(Input.GetAxisRaw("Horizontal"), 1, 1);
             animator.SetBool("Run", true);
+            
 
-            if (onIce)
+            if(onIce)
             {
                 animator.SetBool("Slide", true);
-               
             }
-            else 
+            else
             {
                 animator.SetBool("Slide", false);
-                
             }
-                
         }
         else
         {
@@ -123,8 +122,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-   
-   
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Trap"))

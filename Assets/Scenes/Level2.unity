@@ -57574,6 +57574,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 666284951}
     - target: {fileID: 4838132037367888316, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
+      propertyPath: jumpForce
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838132037367888316, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
       propertyPath: livesText
       value: 
       objectReference: {fileID: 666284949}
@@ -57581,6 +57585,10 @@ PrefabInstance:
       propertyPath: cherriesText
       value: 
       objectReference: {fileID: 666284950}
+    - target: {fileID: 4838132037367888317, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
+      propertyPath: m_Mass
+      value: 0.0001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
 --- !u!1 &2141305440
