@@ -73,7 +73,7 @@ public class PigMovement : MonoBehaviour
 
     IEnumerator ResetJump()
     {
-        yield return new WaitForSeconds(0.5f); // Adjust as needed
+        yield return new WaitForSeconds(0.5f);
         isJumping = false;
     }
 }

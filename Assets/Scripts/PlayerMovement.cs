@@ -53,39 +53,33 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        
         if (!onIce)
         {
             transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0, 0);
-            
         }
         else
         {
             transform.Translate(Input.GetAxis("Horizontal") * iceSpeed * Time.deltaTime, 0, 0);
-            
         }
-
-
 
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
             // Joko a tai d pohjassa
             transform.localScale = new Vector3(Input.GetAxisRaw("Horizontal"), 1, 1);
             animator.SetBool("Run", true);
-            
-
-            if(onIce)
-            {
-                animator.SetBool("Slide", true);
-            }
-            else
-            {
-                animator.SetBool("Slide", false);
-            }
         }
         else
         {
             animator.SetBool("Run", false);
+        }
+
+        if (Input.GetAxisRaw("Horizontal") != 0 && onIce)
+        {
+            animator.SetBool("Slide", true);
+        }
+        else
+        {
+            animator.SetBool("Slide", false);
         }
 
 
@@ -174,9 +168,7 @@ public class PlayerMovement : MonoBehaviour
                 cherriesText.text = "Cherries: " + Cherries.totalCherries;
                 Lives.totalLives++;
                 livesText.text = "Lives: " + Lives.totalLives;
-
             }
-            
         }
 
         if (collision.gameObject.CompareTag("Key"))
@@ -184,9 +176,8 @@ public class PlayerMovement : MonoBehaviour
             hasKey = true;
             Destroy(collision.gameObject);
             itemCollectSoundEffect.Play();
-
         }
-
+        
         if (collision.gameObject.CompareTag("Gate") && hasKey)
         {
             finishSound.Play();
@@ -248,7 +239,6 @@ public class PlayerMovement : MonoBehaviour
         TimeCounter.timeLeft = 120f;
     }
     
-
     private void GameOver()
     {
         SceneManager.LoadScene("GameOver");
