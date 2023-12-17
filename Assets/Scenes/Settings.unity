@@ -760,7 +760,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\t\tControls\n\nMove left   - A\nMove right  - D\nJump \t    - Space\nBetter
-    jump - Space(hold)"
+    jump - Space(hold)\nPause menu  - P"
 --- !u!222 &1628011316
 CanvasRenderer:
   m_ObjectHideFlags: 0
