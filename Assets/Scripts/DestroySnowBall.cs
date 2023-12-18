@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class DestroySnowBall : MonoBehaviour
 {
-    
+    public ParticleSystem snowballHit;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject, 0.2f);
+        snowballHit.Play();
+        Destroy(gameObject, 0.5f);
     }
 
     
