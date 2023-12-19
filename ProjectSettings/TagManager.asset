@@ -11,6 +11,7 @@ TagManager:
   - Key
   - Ice
   - SnowBall
+  - Wall
   layers:
   - Default
   - TransparentFX
