@@ -21,7 +21,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/ilkka/OneDrive/Tiedostot/GitHub/Ninja Frog's adventure/WebGL Builds/Ninja Frog's adventure;C:/Users/ilkka/OneDrive/Tiedostot/GitHub/2D-peliprojekti/Ninja Frog's Adventure;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"C:/Users/ilkka/OneDrive/Tiedostot/GitHub/Ninja Frog's adventure/WebGL Builds/Ninja Frog's adventure/Build/Build;C:/Users/ilkka/OneDrive/Tiedostot/GitHub/Ninja Frog's adventure/WebGL Builds/Ninja Frog's adventure;C:/Users/ilkka/OneDrive/Tiedostot/GitHub/2D-peliprojekti/Ninja Frog's Adventure;;;;;;;\"}"
             }
         ]
     }
