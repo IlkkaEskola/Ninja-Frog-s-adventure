@@ -223,16 +223,6 @@ public class PlayerMovement : MonoBehaviour
         Lives.totalLives--;
     }
 
-    private void FallDeath()
-    {
-        rb2D.bodyType = RigidbodyType2D.Static;
-        animator.SetTrigger("Die");
-        moveSpeed = 0;
-        deathSoundEffect.Play();
-        Cherries.totalCherries = 0;
-        Lives.totalLives--;
-    }
-
     private void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
