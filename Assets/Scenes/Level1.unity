@@ -105512,6 +105512,10 @@ PrefabInstance:
       propertyPath: cherriesText
       value: 
       objectReference: {fileID: 2058143130}
+    - target: {fileID: 4838132037367888318, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84f831528c2336a449abd7e200b23b3c, type: 3}
 --- !u!1001 &5963803680458115001

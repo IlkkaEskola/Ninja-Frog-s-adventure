@@ -12,11 +12,11 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public float iceSpeed;
     public float jumpForce;
+    
     private bool hasKey;
 
-    public Transform playerTransform;
-    //public float wallJumpRayLength = 0.5f;
-
+    //public Transform playerTransform;
+    
     public Transform groundCheckPosition;
     public float groundCheckRadius;
     public LayerMask groundCheckLayer;
@@ -53,13 +53,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        HorizontalMovement();
+        Jumping();
+    }
+
+    private void HorizontalMovement()
+    {
         if (!onIce)
         {
-            transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0, 0);
+            transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0, 0); // Pelaajan liikkuminen maalla
         }
         else
         {
-            transform.Translate(Input.GetAxis("Horizontal") * iceSpeed * Time.deltaTime, 0, 0);
+            transform.Translate(Input.GetAxis("Horizontal") * iceSpeed * Time.deltaTime, 0, 0); // Pelaajan liikkuminen j‰‰ll‰
         }
 
         if (Input.GetAxisRaw("Horizontal") != 0)
@@ -81,8 +87,10 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("Slide", false);
         }
+    }
 
-
+    private void Jumping()
+    {
         //Tarkistetaan onko pelaaja maassa
         if (Physics2D.OverlapCircle(groundCheckPosition.position, groundCheckRadius, groundCheckLayer))
         {
@@ -93,27 +101,13 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
 
+        //Voidaan hyp‰t‰, jos pelaaja on maassa
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb2D.velocity = new Vector2(0, jumpForce);
             animator.SetTrigger("Jump");
             jumpSoundEffect.Play();
         }
-
-        
-        //Pelaaja kuolee, jos putoaa kielekkeelt‰
-        /*if (transform.position.y < -8)
-        {
-            Cherries.totalCherries = 0;
-            Lives.totalLives--;
-            FallDeath();
-
-            if (Lives.totalLives < 0)
-            {
-                Invoke("GameOver", 2f);
-            }
-        }*/
-
     }
 
 
