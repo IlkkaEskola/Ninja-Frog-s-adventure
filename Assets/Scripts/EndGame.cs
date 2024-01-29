@@ -9,9 +9,9 @@ public class EndGame : MonoBehaviour
 {
     public void Quit()
     {
-        Cherries.totalCherries = 0;
-        Lives.totalLives = 0;
-        TimeCounter.timeLeft = 120f;
+        PlayerMovement.totalCherries = 0;
+        PlayerMovement.totalLives = 0;
+        PlayerMovement.timeLeft = 120f;
         SceneManager.LoadScene("MainMenu");
     }
 }

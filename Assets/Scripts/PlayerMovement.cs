@@ -9,6 +9,10 @@ using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static int totalCherries;
+    public static int totalLives;
+    public static float timeLeft = 120f;
+
     public float moveSpeed;
     public float iceSpeed;
     public float jumpForce;
@@ -43,9 +47,9 @@ public class PlayerMovement : MonoBehaviour
         iceSpeed = moveSpeed * 2f;
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        livesText.text = "Lives: " + Lives.totalLives;
-        cherriesText.text = "Cherries: " + Cherries.totalCherries;
-        timeText.text = "Time: " + TimeCounter.timeLeft;
+        livesText.text = "Lives: " + totalLives;
+        cherriesText.text = "Cherries: " + totalCherries;
+        timeText.text = "Time: " + timeLeft;
 
         StartCoroutine(TimeRemaining());
     }
@@ -117,7 +121,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Die();
      
-            if(Lives.totalLives < 0)
+            if(totalLives < 0)
             {
                 Invoke("GameOver", 2f);
             }
@@ -127,7 +131,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Die();
 
-            if (Lives.totalLives < 0)
+            if (totalLives < 0)
             {
                 Invoke("GameOver", 2f);
             }
@@ -152,16 +156,16 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Cherry"))
         {
             Destroy(collision.gameObject);
-            Cherries.totalCherries++;
-            cherriesText.text = "Cherries: " + Cherries.totalCherries;
+            totalCherries++;
+            cherriesText.text = "Cherries: " + totalCherries;
             itemCollectSoundEffect.Play();
 
-            if(Cherries.totalCherries == 5)
+            if(totalCherries == 5)
             {
-                Cherries.totalCherries = 0;
-                cherriesText.text = "Cherries: " + Cherries.totalCherries;
-                Lives.totalLives++;
-                livesText.text = "Lives: " + Lives.totalLives;
+                totalCherries = 0;
+                cherriesText.text = "Cherries: " + totalCherries;
+                totalLives++;
+                livesText.text = "Lives: " + totalLives;
             }
         }
 
@@ -181,31 +185,24 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator TimeRemaining()
     {
-        while(TimeCounter.timeLeft > 0) 
+        while(timeLeft > 0) 
         {
-            timeText.text = "Time: " + TimeCounter.timeLeft.ToString();
+            timeText.text = "Time: " + timeLeft.ToString();
             yield return new WaitForSeconds(1f);
-            TimeCounter.timeLeft--;
+            timeLeft--;
         }
 
-        if(TimeCounter.timeLeft <= 0) 
+        if(timeLeft <= 0) 
         {
             Die();
 
-            if (Lives.totalLives < 0)
+            if (totalLives < 0)
             {
                 Invoke("GameOver", 2f);
             }
         }
     }
-    /*private void TimeRemaining()
-    {
-        if (TimeCounter.timeLeft > 0)
-        {
-            TimeCounter.timeLeft -= Time.deltaTime;
-            timeText.text = "Time: " + TimeCounter.timeLeft;
-        }
-    }*/
+    
 
     private void Die()
     {
@@ -213,26 +210,26 @@ public class PlayerMovement : MonoBehaviour
         animator.SetTrigger("Die");
         moveSpeed = 0;
         deathSoundEffect.Play();
-        Cherries.totalCherries = 0;
-        Lives.totalLives--;
+        totalCherries = 0;
+        totalLives--;
     }
 
     private void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        TimeCounter.timeLeft = 120f;
+        timeLeft = 120f;
     }
     
     private void GameOver()
     {
         SceneManager.LoadScene("GameOver");
-        TimeCounter.timeLeft = 120f;
+        timeLeft = 120f;
     }
 
     private void LevelComplete()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        TimeCounter.timeLeft = 120f;
+        timeLeft = 120f;
     }
 
 }

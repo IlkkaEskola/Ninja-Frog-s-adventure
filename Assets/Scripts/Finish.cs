@@ -27,6 +27,6 @@ public class Finish : MonoBehaviour
     private void LevelComplete()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        TimeCounter.timeLeft = 120f;
+        PlayerMovement.timeLeft = 120f;
     }
 }
