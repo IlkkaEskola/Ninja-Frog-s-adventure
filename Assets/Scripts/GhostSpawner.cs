@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ghost : MonoBehaviour
+public class GhostSpawner : MonoBehaviour
 {
     public GameObject ghostPrefab;
     public float spawnInterval = 2f;
@@ -15,7 +15,7 @@ public class Ghost : MonoBehaviour
     void Start()
     {    
         InvokeRepeating("SpawnGhost", 2f, spawnInterval);
-        //Destroy(gameObject, 3f);
+        
     }
 
     void SpawnGhost()

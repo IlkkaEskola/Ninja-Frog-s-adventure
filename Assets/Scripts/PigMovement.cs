@@ -19,11 +19,11 @@ public class PigMovement : MonoBehaviour
     private Vector3 currentTarget;
     private int direction = 1;
 
-    //private Animator animator;
+    private Animator animator;
 
     void Start()
     {
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
         currentTarget = endPoint.position;
     }

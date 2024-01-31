@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Rotation : MonoBehaviour
 {
-    [SerializeField] private float speed = 1.5f;
+    [SerializeField] private float speed = 1.5f; //1,5 havaittu kokeilemalla sopivaksi nopeudeksi
 
     private void Update()
     {

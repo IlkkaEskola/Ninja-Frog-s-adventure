@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public Transform startPoint; // alku piste
-    public Transform endPoint;   // loppupiste
-    public float speed = 2.0f;   // nopeus liikkuessa
-    public float stoppingDistance = 0.1f; // pys‰ytys et‰isyys
+    public Transform startPoint; //Alku piste
+    public Transform endPoint;   //Loppupiste
+    public float speed = 2.0f;   
+    public float stoppingDistance = 0.1f; //Pys‰ytys et‰isyys
 
     private Vector3 currentTarget;
     private int direction = 1;
 
-    //private Animator animator;
+    private Animator animator;
 
     void Start()
     {
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         currentTarget = endPoint.position;
     }
 
@@ -35,7 +35,7 @@ public class EnemyMovement : MonoBehaviour
                 direction = 1;
             }
 
-            // k‰‰nn‰ ymp‰ri
+            // k‰‰ntyy ymp‰ri
             Vector3 newScale = transform.localScale;
             newScale.x = direction;
             transform.localScale = newScale;

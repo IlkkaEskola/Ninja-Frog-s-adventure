@@ -10,7 +10,4 @@ public class DestroySnowBall : MonoBehaviour
         snowballHit.Play();
         Destroy(gameObject, 0.5f);
     }
-
-    
-    
 }
