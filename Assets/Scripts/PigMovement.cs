@@ -8,7 +8,7 @@ public class PigMovement : MonoBehaviour
 
     public Transform startPoint; // alku piste
     public Transform endPoint;   // loppupiste
-    public float speed = 2.0f;   // nopeus liikkuessa
+    public float speed = 2.0f;   
     public float stoppingDistance = 0.1f; // pys‰ytys et‰isyys
     
     public float jumpForce = 6f;
@@ -43,7 +43,7 @@ public class PigMovement : MonoBehaviour
                 direction = 1;
             }
 
-            // k‰‰nn‰ ymp‰ri
+            // k‰‰ntyy ymp‰ri
             Vector3 newScale = transform.localScale;
             newScale.x = direction;
             transform.localScale = newScale;
