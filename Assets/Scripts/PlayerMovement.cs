@@ -19,8 +19,6 @@ public class PlayerMovement : MonoBehaviour
     
     private bool hasKey;
 
-    //public Transform playerTransform;
-    
     public Transform groundCheckPosition;
     public float groundCheckRadius;
     public LayerMask groundCheckLayer;

@@ -86233,6 +86233,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3687152922635603065, guid: db3378434ad4c5a439af4a11207b7ced, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687152922635603065, guid: db3378434ad4c5a439af4a11207b7ced, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687152923594297449, guid: db3378434ad4c5a439af4a11207b7ced, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687152923594297449, guid: db3378434ad4c5a439af4a11207b7ced, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687152923594297449, guid: db3378434ad4c5a439af4a11207b7ced, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6765376762131363481, guid: db3378434ad4c5a439af4a11207b7ced, type: 3}
       propertyPath: m_Name
       value: CanvasPauseMenu
@@ -86323,6 +86343,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6765376762131363485, guid: db3378434ad4c5a439af4a11207b7ced, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6765376762833196966, guid: db3378434ad4c5a439af4a11207b7ced, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
