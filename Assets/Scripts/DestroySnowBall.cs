@@ -8,6 +8,6 @@ public class DestroySnowBall : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         snowballHit.Play();
-        Destroy(gameObject, 0.5f);
+        Destroy(gameObject, 0.5f);  //Pieni lumipallo
     }
 }

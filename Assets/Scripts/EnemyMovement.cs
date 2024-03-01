@@ -22,26 +22,34 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
+        Movement();
+    }
+
+    private void Movement()
+    {
+        //Tarkistetaan, onko vihollinen saavuttanut nykyisen kohteen
         if (Vector3.Distance(transform.position, currentTarget) < stoppingDistance)
         {
+            //Jos nykyinen kohde on loppupiste, vaihdetaan kohde alkupisteeksi ja vaihdetaan suunta
             if (currentTarget == endPoint.position)
             {
                 currentTarget = startPoint.position;
                 direction = -1;
             }
+            //Muussa tapauksessa vaihdetaan kohde loppupisteeksi ja vaihdetaan suunta
             else
             {
                 currentTarget = endPoint.position;
                 direction = 1;
             }
 
-            // kääntyy ympäri
+            //Käännetään vihollinen ympäri
             Vector3 newScale = transform.localScale;
             newScale.x = direction;
             transform.localScale = newScale;
         }
 
+        //Liikutetaan vihollista kohti nykyistä kohdetta
         transform.position = Vector3.MoveTowards(transform.position, currentTarget, speed * Time.deltaTime);
-        
     }
 }

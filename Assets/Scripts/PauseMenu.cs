@@ -34,14 +34,14 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
+        Time.timeScale = 1f;  //Asettaa ajan takaisin normaaliksi
         GameIsPaused = false;
     }
 
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
+        Time.timeScale = 0f;  //Pys‰ytt‰‰ ajan
         GameIsPaused = true;
     }
 
@@ -50,9 +50,9 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
-        PlayerMovement.totalCherries = 0;
-        PlayerMovement.totalLives = 0;
-        PlayerMovement.timeLeft = 120f;
+        PlayerMovement.totalCherries = 0;     // |Nollataan kirsikat, el‰m‰t|
+        PlayerMovement.totalLives = 0;        // |ja aika, kun palataan     |
+        PlayerMovement.timeLeft = 120f;       // |MainMenuun                |
         SceneManager.LoadScene("MainMenu");
     }
 

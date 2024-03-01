@@ -8,7 +8,7 @@ public class DestroyObjects : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Trap"))
         {
-            Destroy(gameObject);
+            Destroy(gameObject);  //Iso lumipallo
         }
     }
 }

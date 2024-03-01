@@ -16,11 +16,16 @@ public class BetterJump : MonoBehaviour
 
     void Update()
     {
-        if (rb.velocity.y < 0)
+        SmoothJump();
+    }
+
+    private void SmoothJump()
+    {
+        if (rb.velocity.y< 0) //Jos pelaaja pn putoamassa
         {
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            rb.velocity += Vector2.up* Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
-        else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
+        else if (rb.velocity.y > 0 && !Input.GetButton("Jump")) //Jos pelaaja on hyp‰nnyt ja hyppynappia ei en‰‰ painata
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
