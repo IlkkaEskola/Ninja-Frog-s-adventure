@@ -9,29 +9,31 @@ public class SoundManager : MonoBehaviour
 
     void Start()
     {
+        //Tarkistetaan onko ‰‰nenvoimakkuutta tallennettu aiemmin
         if (!PlayerPrefs.HasKey("musicVolume"))
         {
+            //Jos ei ole tallennettu, asetetaan oletusarvoksi ‰‰nenvoimakkuus 1
             PlayerPrefs.SetFloat("musicVolume", 1);
-            Load();
+            Load();  //Ladataan ‰‰nenvoimakkuuden arvo
         }
         else
         {
-            Load();
+            Load();  //Ladataan tallennettu ‰‰nenvoimakkuuden arvo
         }
     }
 
-    public void ChangeVolume()
+    public void ChangeVolume()  //Kutsutaan, kun k‰ytt‰j‰ muuttaa ‰‰nenvoimakkuutta
     {
         AudioListener.volume = volumeSlider.value;
-        Save();
+        Save();  //Tallennetaan ‰‰nenvoimakkuuden arvo
     }
 
-    private void Load()
+    private void Load()  //Lataa tallennetun ‰‰nenvoimakkuuden arvon
     {
         volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
     }
 
-    private void Save()
+    private void Save()  //Tallentaa nykyisen ‰‰nenvoimakkuuden arvon
     {
         PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
     }

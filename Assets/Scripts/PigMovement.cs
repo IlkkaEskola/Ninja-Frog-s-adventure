@@ -6,13 +6,13 @@ public class PigMovement : MonoBehaviour
 {
     private Rigidbody2D rb2D;
 
-    public Transform startPoint; // alku piste
-    public Transform endPoint;   // loppupiste
+    public Transform startPoint; //Alkupiste
+    public Transform endPoint;   //Loppupiste
     public float speed = 2.0f;   
-    public float stoppingDistance = 0.1f; // pys‰ytys et‰isyys
+    public float stoppingDistance = 0.1f; //Pys‰ytys et‰isyys
     
     public float jumpForce = 6f;
-    public float jumpInterval = 3f;
+    public float jumpInterval = 3f;  //Aika hyppyjen v‰lill‰
     private bool isJumping = false;
     private float jumpTimer = 0f;
 
@@ -29,6 +29,12 @@ public class PigMovement : MonoBehaviour
     }
 
     void Update()
+    {
+        Movement();
+        UpdateJump();
+    }
+
+    private void Movement()
     {
         if (Vector3.Distance(transform.position, currentTarget) < stoppingDistance)
         {
@@ -50,15 +56,20 @@ public class PigMovement : MonoBehaviour
         }
 
         transform.position = Vector3.MoveTowards(transform.position, currentTarget, speed * Time.deltaTime);
+    }
 
+    private void UpdateJump()
+    {
+        //P‰ivitet‰‰n hyppyjen aikav‰li‰
         jumpTimer += Time.deltaTime;
 
+        //Tarkistetaan onko hyppyjen aikav‰li kulunut
         if (jumpTimer >= jumpInterval)
         {
+            //Hyp‰t‰‰n ja nollataan hyppyjen aikav‰li
             Jump();
             jumpTimer = 0f;
         }
-
     }
 
     private void Jump()
@@ -73,7 +84,8 @@ public class PigMovement : MonoBehaviour
 
     IEnumerator ResetJump()
     {
-        yield return new WaitForSeconds(0.5f);
+        //Estet‰‰n jatkuva hyppiminen pienell‰ viiveell‰, nollaamalla isJumping muuttuja
+        yield return new WaitForSeconds(0.5f);  
         isJumping = false;
     }
 }

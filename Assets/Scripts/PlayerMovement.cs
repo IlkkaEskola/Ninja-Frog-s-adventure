@@ -49,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         cherriesText.text = "Cherries: " + totalCherries;
         timeText.text = "Time: " + timeLeft;
 
+        //Käynnistetään aikalaskuri
         StartCoroutine(TimeRemaining());
     }
 
@@ -59,20 +60,23 @@ public class PlayerMovement : MonoBehaviour
         Jumping();
     }
 
+    //Pelaajan liikkuminen
     private void HorizontalMovement()
     {
         if (!onIce)
         {
-            transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0, 0); // Pelaajan liikkuminen maalla
+            //Pelaajan liikkuminen maalla
+            transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0, 0); 
         }
         else
         {
-            transform.Translate(Input.GetAxis("Horizontal") * iceSpeed * Time.deltaTime, 0, 0); // Pelaajan liikkuminen jäällä
+            //Pelaajan liikkuminen jäällä
+            transform.Translate(Input.GetAxis("Horizontal") * iceSpeed * Time.deltaTime, 0, 0); 
         }
 
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
-            // Joko a tai d pohjassa
+            //Joko a tai d pohjassa
             transform.localScale = new Vector3(Input.GetAxisRaw("Horizontal"), 1, 1);
             animator.SetBool("Run", true);
         }
@@ -91,6 +95,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    //Pelaajan hypääminen
     private void Jumping()
     {
         //Tarkistetaan onko pelaaja maassa
@@ -149,6 +154,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    //Toiminnot kerättäville esineille
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Cherry"))
@@ -181,6 +187,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    //Aikalaskurin hallinta. Toistetaan kunnes jäljellä oleva aika on nolla
     IEnumerator TimeRemaining()
     {
         while(timeLeft > 0) 
@@ -201,10 +208,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     
-
     private void Die()
     {
-        rb2D.bodyType = RigidbodyType2D.Static;
+        rb2D.bodyType = RigidbodyType2D.Static;  
         animator.SetTrigger("Die");
         moveSpeed = 0;
         deathSoundEffect.Play();
