@@ -201,7 +201,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Die();
 
-            if (totalLives < 0)
+            if (totalLives < 20)
             {
                 Invoke("GameOver", 2f);
             }
